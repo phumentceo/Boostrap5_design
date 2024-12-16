@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style/index.css">
+    <style>
+        .carousel-item  > img {
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navarbar start -->
+    <nav class=" bg-dark p-3 d-flex justify-content-between px-5 align-items-center">
+
+        <div class="logo">
+            <img src="https://www.paper.co.uk/wp-content/uploads/2022/07/ETEC-logo.png" alt="">
+        </div>
+
+
+        <div class="d-flex align-items-center">
+            
+
+            <div class="dropdown mx-1">
+                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Web Design
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">React JS</a></li>
+                  <li><a class="dropdown-item" href="#">Vue JS</a></li>
+                  <li><a class="dropdown-item" href="#">Angular JS</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown mx-1">
+                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Backend Course
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">PHP/Laravel</a></li>
+                  <li><a class="dropdown-item" href="#">Node/Express</a></li>
+                  <li><a class="dropdown-item" href="#">Java/Spring Boot</a></li>
+                </ul>
+            </div>
+
+            <div class="profile ms-4">
+                <img type="button" data-bs-toggle="dropdown" aria-expanded="false" src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/50dab922-5d48-4c6b-8725-7fd0755d9334/3a3f2d35-8167-4708-9ef0-bdaa980989f9.png" alt="Profile Picture">
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><span><i class="bi bi-person-circle"></i></span>&emsp;Profile</a></li>
+                    <li><a class="dropdown-item" href="#"><span><i class="bi bi-gear"></i></span>&emsp;Setting</a></li>
+                    <li><a class="dropdown-item" href="#"><span><i class="bi bi-box-arrow-right"></i></span>&emsp;Logout</a></li>
+                  </ul>
+            </div>
+
+            <div class="show-menu ms-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#ddfsasfasd" aria-controls="offcanvasExample">
+                <i class="bi bi-three-dots-vertical menuIcon"></i>
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- Navbar end -->
+
+
+    <!-- Sidebar start -->   
+    <div class="offcanvas offcanvas-end"  tabindex="-1" id="ddfsasfasd" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+
+                <li>
+                    <a href="dashboard.html">
+                        <i class="bi bi-speedometer"></i>&emsp;
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="mt-3">
+                    <a href="web_design.html">
+                       <i class="bi bi-filetype-css"></i>&emsp;
+                       Web Design
+                    </a>
+                </li>
+
+                <li class="mt-3">
+                    <a href="">
+                        <i class="bi bi-filetype-php"></i>&emsp;
+                        Web Backend
+                    </a>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+    <!-- Sidebar end -->
+
+
+
+
+    <!-- Main Contents start -->
+    <div class=" container mt-3">
+        
+        <!-- Slider start -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/4085715/cover_image/regular_1708x683/0925-3D_Data_Visualization_with_Open_Source_Tools_A_Tutorial_Using_VTK_Dan_Newsletter-8de886e8cfe7817dd6f2502c43aacdce.png" class="d-block w-100" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/11/what-is-html-3.jpg" class="d-block w-100" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img src="https://www.uxdesigninstitute.com/blog/wp-content/uploads/2024/11/101_UX_vs_UI_illustration_blog-1.png" class="d-block w-100" alt="...">
+              </div>
+
+            </div>
+
+            <!-- Next and Prev  -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+
+        </div>
+        <!-- Slider end  -->
+
+
+        <!--Backend Course start -->
+        <div class="row mt-3">
+
+            <h3 class=" mb-3"><u>Backend Course</u></h3>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                    <img src="https://netsolutions.com/insights/wp-content/uploads/2022/11/top-php-ides.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP Course</h5>
+                        <p class="card-text">Learn PHP  Programming from scratch to build real-world applications.</p>
+                        <a href="#" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                    <img src="https://isophal.com/wp-content/uploads/2024/08/Laravel-Framework-banner.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Laravel Framework Course</h5>
+                        <p class="card-text">Learn Laravel Framework from scratch to build real-world applications.</p>
+                        <a href="#" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                    <img src="https://binmile.com/wp-content/uploads/2022/12/Nodejs-Application-Development-1.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Node JS Course</h5>
+                        <p class="card-text">Learn Node JS from scratch to build real-world applications.</p>
+                        <a href="#" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                    <img src="https://www.jrebel.com/sites/default/files/image/2022-03/blog-image-jrebel-spring-boot-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Spring Boot Framework</h5>
+                        <p class="card-text">Learn Spring Boot Framework from scratch to build real-world applications.</p>
+                        <a href="#" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                    <img src="https://positiwise.com/blog/wp-content/uploads/2022/01/a-descriptive-guide-to-dot-net-framework.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">.NET Framework</h5>
+                        <p class="card-text">Learn .NET Framework from scratch to build real-world applications.</p>
+                        <a href="#" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <div class="card">
+                    <img src="https://nimapinfotech.com/wp-content/uploads/2021/07/Pros-and-Cons-of-Django-Framework-for-Development-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Django Course</h5>
+                        <p class="card-text">Learn Django from scratch to build real-world applications.</p>
+                        <a href="#" class="btn btn-primary">Start Course</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <a class=" text-center my-3" href=""><u>View all courses</u></a>
+        </div>
+        <!-- Backend Course end -->
+
+    </div>
+    <!-- Main Contents end -->
+
+
+   
+
+
+    
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
